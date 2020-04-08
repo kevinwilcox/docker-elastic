@@ -1,0 +1,14 @@
+## I use this as my hostname on test boxes
+node.name: u18_docker
+
+## with this, ES will listen on all interfaces/IPs
+network.host: 0.0.0.0
+
+## default data and log paths
+path.data: /var/lib/elasticsearch
+path.logs: /var/log/elasticsearch
+
+## ES has built-in ways to look for other nodes,
+##   this just speeds up the startup process
+cluster.initial_master_nodes:
+  - u18_docker

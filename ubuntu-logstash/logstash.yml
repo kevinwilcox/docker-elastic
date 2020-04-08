@@ -1,0 +1,13 @@
+## the only truly necessary options
+##   put logs in /var/log/logstasth
+##   put queues/runtime data in /var/lib/logstash
+path:
+  data: /var/lib/logstash
+  logs: /var/log/logstash
+## logstash can do hot reloading of its config
+##   directory but that's a bit further out
+## this is just a stub for when I'm ready to do it
+#config:
+#  reload:
+#    automatic: true
+#    interval: 5s

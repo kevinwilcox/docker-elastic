@@ -1,0 +1,10 @@
+## 192.168.1.100 is the IP of my physical host where
+##   the kibana container is running
+## you can use the internal Docker networking stack
+##   but I like accessing everything from anywhere on my LAN
+elasticsearch.hosts:
+  - http://192.168.1.100:9200
+
+## this tells kibana to listen for connections regardless of
+##   the IP or hostname of the container
+server.host: 0.0.0.0
